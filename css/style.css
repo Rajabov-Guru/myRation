@@ -1,0 +1,112 @@
+
+/* TOTAL-CSS */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+    margin: auto;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+/* END-TOTAL-CSS */
+
+
+/* HEADER */
+.header {
+    width:100%;
+    position: absolute;
+    background-color: #FFE8A8;
+}
+.header__wrapper {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__nuv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 10%;
+}
+.header__logo {
+    width: 30%;
+}
+.header__logo img {
+    width: 191px;
+    height: 49px;
+}
+.header__shop {
+    width: 21px;
+	height: 21px;
+}
+.header__lk {
+    width: 21px;
+	height: 21px;
+}
+.header__burger {
+    width: 21px;
+	height: 21px;
+}
+
+/* END-HEADER */
+
+
+/* BANNER */
+
+.banner {
+    height: 100%;
+}
+img {
+    width: 100%;
+    object-fit: contain;
+}
+.banner {
+    background-image: url('../img/Rectangle.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    width: 100%;
+}
+.banner__wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    text-align: center;
+}
+.banner__logo {
+    height: 132px;
+}
+.banner__title {
+    font-size: 64px;
+    margin: 50px 0;
+}
+.banner__btn {
+    background-color: #FFEBB6;
+    font-size: 20px;
+    padding: 20px 60px;
+    transition: all 0.5s ease;
+}
+.banner__btn:hover {
+    background-color: #A62116;
+    color: #FFF;
+    transition: all 0.5s ease;
+}
+
+/* END-BANNER */

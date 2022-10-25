@@ -3,7 +3,7 @@
 <head>
     <meta charset = "UTF-8">
     <meta name ="viewport" content = "width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "../myRation/css/style.css">
+    <link rel = "stylesheet" href = "css/main.css">
     <title>myRation main</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,15 +11,17 @@
 </head>
 
 <body>
-
+    
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
-                <a href="../myRation/index.html" class="header__logo"><img src = "../myRation/img/logo.svg"></a>
+                <a href="index.html" class="header__logo">
+                    <img src = "img/logo.svg">
+                </a>
                 <div class="header__nuv">
-                    <a href=""><img class="header__burger" src="../myRation/img/burger.svg"></a>
-                    <a href=""><img class="header__shop" src="../myRation/img/Icon.svg"></a>
-                    <a href=""><img class="header__lk" src="../myRation/img/user-icon.svg"></a>
+                    <a href="#"><img class="header__burger" src="img/icon_burger.svg"></a>
+                    <a href="#"><img class="header__shop" src="img/Icon.svg"></a>
+                    <a href="#"><img class="header__lk" src="img/user-icon.svg"></a>
                 </div>
             </div>
         </div>
@@ -28,13 +30,14 @@
     <section class="banner">
         <div class="container">
             <div class="banner__wrapper">
-                <img class="banner__logo" src="../myRation/img/logo.svg">
+                <img class="banner__logo" src="img/logo.svg">
                 <h1 class="banner__title">Система здорового питания<br>с доставкой на дом</h1>
                 <button class="banner__btn">Выбрать рацион</button>
             </div>
         </div>
     </section>
 
+    <!-- ↓↓↓ NUR ↓↓↓ -->
     <section class="stages">
         <div class="container">
             <div class="stages__wrapper">
@@ -135,15 +138,7 @@
                         </div>
 
                         <div class="Growth">
-                        <!--<h5 class="h5">Активность:</h5>
-                            <input type="text" class="calorie_passcount">-->
                             <h5 class="h5">Активность:</h5>
-                            <!--<div class = "password" style="border-bottom: 1px solid black;">
-                                <input type="password" class="input"  placeholder="Каждый день">
-                                <button class="btn">
-                                    <img src="img/choose_vector_way_down.svg" alt="">
-                                </button>
-                            </div>-->
                             <div class="activity">
                                 <select name = "activity" class="activity1">
                                     <option value = "1"> Каждый день</option>
@@ -153,7 +148,6 @@
                                 </select >
                                 <img src="img/choose_vector_way_down.svg" alt="">
                             </div>
-                            
                         </div>
                     </div>
                 </form>
@@ -203,5 +197,80 @@
 
         </div>
     </section>
+
+    <section class="comments">
+        <div class="container">
+            <h2>Отзывы</h2> 
+            <div class="comment">
+                <div class="content">
+                    <div class="imeg">
+                        <img src="img/Photo_Comments.svg" alt="">
+                    </div>
+                    <div class="text_comment">
+                        <div class="title">
+                            <div class="email">
+                                <h3>@sofiyapolzun</h3>
+                            </div>
+                            <div class="stars">
+                                <div class="star"><img src="img/Icon_star.svg" alt=""></div>
+                                <div class="star"><img src="img/Icon_star.svg" alt=""></div>
+                                <div class="star"><img src="img/Icon_star.svg" alt=""></div>
+                                <div class="star"><img src="img/Icon_star.svg" alt=""></div>
+                                <div class="star"><img src="img/Icon_star.svg" alt=""></div>
+                            </div>
+                        </div>
+                        <p>«Мне очень нравится ваша еда! У меня
+                            никогда не было каких-либо очень
+                            привередливых вкусов в еде, плюс когда я
+                            решила встать на «путь истинный» похудения, я понимала, что, мне не так
+                            важно, насколько это будет вкусно, как
+                            насколько это будет эффективно! Чтобы я
+                            не была голодной и при этом худела
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider">
+                <div class="last">
+                    <img src="img/icon_Last.svg" alt="">
+                </div>
+                <div class="rounds">
+                    <div class="round"><img src="img/active_round.svg" alt=""></div>
+                    <div class="round"><img src="img/icon_round.svg" alt=""></div>
+                    <div class="round"><img src="img/icon_round.svg" alt=""></div>
+                    <div class="round"><img src="img/icon_round.svg" alt=""></div>
+                    <div class="round"><img src="img/icon_round.svg" alt=""></div>
+                </div>
+                <div class="last">
+                    <img src="img/icon_Next.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="logo_novigation">
+                <div class="logo">
+                    <img src="img/logo.svg" alt="">
+                    
+                </div>
+                <div class="novigation">
+                    <a href="index.html">Наши рационы</a>
+                    <a href="index.html">О компании</a>
+                    <a href="index.html">Оплата и доставка</a>
+                    <a href="index.html">Отзывы</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <h5>© myRation 2022. </h5>
+                <a href="#"> Все права защищены</a>
+            </div>
+        </div>
+        
+    </footer>
+    <!-- ↑↑↑ NUR ↑↑↑ -->
+
 </body>
 </html>

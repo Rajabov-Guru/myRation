@@ -58,95 +58,66 @@ button {
     background: none;
     cursor: pointer;
 }
-
 /* END-TOTAL-CSS */
 
-
 /* HEADER */
-.header {
-    width:100%;
-    position: absolute;
+header{
     background-color: #FFE8A8;
+    width: 100%;
 }
-.header__wrapper {
-    height: 90px;
+header .header__wrapper{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-}
-.header__nuv {
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 10%;
+    padding: 20px 0;
 }
-.header__logo {
-    width: 30%;
-}
-.header__logo img {
+header .header__wrapper .header__logo img{
     width: 191px;
     height: 49px;
 }
-.header__shop {
-    width: 21px;
-	height: 21px;
+header .header__wrapper .header__nuv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
-.header__lk {
-    width: 21px;
-	height: 21px;
+header .header__wrapper .header__nuv a{
+    margin-right: 28px;
 }
-.header__burger {
-    width: 21px;
-	height: 21px;
-}
-
 /* END-HEADER */
 
-
 /* BANNER */
-
-.banner {
-    height: 100%;
-}
-img {
-    width: 100%;
-    object-fit: contain;
-}
-.banner {
+.banner{
+    text-align: center;
     background-image: url('../img/Rectangle.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 100vh;
+    height: 1036px;
     width: 100%;
 }
-.banner__wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -35%);
-    text-align: center;
+.banner .banner__wrapper .banner__logo{
+    margin-top: 180px;
+    margin-bottom: 52px;
+    width: 513px;
+    height:132px;
+    
 }
-.banner__logo {
-    height: 132px;
-}
-.banner__title {
-    font-size: 64px;
-    margin: 50px 0;
-}
-.banner__btn {
+.banner .banner__wrapper .banner__btn{
+    width: 282px;
+    height: 64px;
     background-color: #FFEBB6;
     border-radius: 50px;
+    margin-top: 80px;
     font-size: 20px;
-    padding: 20px 60px;
-    transition: all 0.5s ease;
+    font-weight: 700;
 }
-.banner__btn:hover {
-    background-color: #A62116;
-    color: #FFF;
-    transition: all 0.5s ease;
+.banner .banner__wrapper .banner__btn:hover{
+    background-color: #FFF3D0;
 }
-
+.banner .banner__wrapper .banner__btn:active{
+    background-color: #FFEBB6;
+}
 /* END-BANNER */
 
 /* stages of work */
@@ -193,7 +164,7 @@ img {
 /*calorie_passcount*/
 form{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin-top: 44px;
 }
@@ -209,6 +180,7 @@ form{
 .left{
     text-align: start;
     width: 407px;
+    margin-right: 100px;
 }
 .left .gender .gender_choose{
     display: flex;
@@ -279,7 +251,7 @@ form{
     width: 100%;
     background-color: transparent;
     border: none;
-    border-bottom:1px solid #000000;
+    border-bottom:1px solid #C0C0C0;
 }
 .left .input .calorie_passcount:focus{
     outline: 0;
@@ -295,7 +267,7 @@ form{
     width: 100%;
     background-color: transparent;
     border: none;
-    border-bottom:1px solid #000000;
+    border-bottom:1px solid #C0C0C0;
 }
 .right .input .calorie_passcount:focus{
     outline: 0;
@@ -347,7 +319,8 @@ form{
    
 }
 .right .Growth .activity1{
-    
+    /*background-image: url("img/choose_vector_way_down.svg") no-repeat right; Добавить свою стрелку*/
+    /*background-position-x: calc(100% - 8px);           Подвинуть по горизонтали*/
     font-size: 20px;
     height: 40px;
     width: 100%;
@@ -406,3 +379,117 @@ form{
     font-weight: 400;
     width: 250px;
 }
+
+/*comments*/
+.comments{
+    margin-top: 160px;
+}
+.comment{
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: #EFFFEF;
+    border:1px solid black;
+    padding: 60px;
+    width: 1056px;
+} 
+.comment .content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.comment .content .imeg{
+    margin-right: 25px;
+    width: 349px;
+    height: 389px;
+    border-radius: 10px;
+}
+.comment .content .imeg img{
+    width: 349px;
+    height: 389px;
+    border-radius: 10px;
+ }
+.comment .content .text_comment{
+    width: 542px;
+}
+.comment .content .text_comment .title{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 24px;
+    
+}
+.comment .content .text_comment .title .email{
+    margin-right: 24px;
+}
+.comment .content .text_comment .title .stars{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.comment .content .text_comment .title .stars .star{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+.comment .content .text_comment p{
+    font-size: 18px;
+}
+.slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 77px;
+}
+.slider .last img{
+    width: 20px;
+}
+.slider .rounds{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider .rounds .round{
+    margin-right: 24px;
+}
+.slider .rounds img{
+    width: 12px;
+    height: 12px;
+}
+/*comments END*/
+
+/*footer*/
+footer{
+    margin-top: 160px;
+    background-color: #FFE8A8;
+    padding-top: 12px;
+    padding-bottom: 35px;
+}
+.logo_novigation{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo_novigation .logo{
+    margin-right: 72px;
+}
+.logo_novigation .logo img {
+    width: 191px;
+    height: 49px;
+}
+.logo_novigation .novigation a{
+    margin-right: 67px;
+    text-decoration: none;
+    color: #000000;
+}
+.copyright{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 20px;
+}
+.copyright a{
+    margin-left: 5px;
+    color: #000000;
+    text-decoration: none;
+}
+/*footer END*/

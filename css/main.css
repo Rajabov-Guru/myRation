@@ -120,6 +120,30 @@ header .header__wrapper .header__nuv a{
 }
 /* END-BANNER */
 
+/* ADVANTAGES */
+
+.advantages {
+    margin-top: 160px;
+    width: 1278px;
+    height: 375px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.advantages__block {
+    margin-top:60px;
+    justify-content: center;
+    display: flex;
+}
+
+.advantages__block__card {
+    padding: 0px 30px;
+}
+
+h6 {
+    padding-top: 24px;
+}
+
 /* stages of work */
 .stages__wrapper {
     margin-top: 160px;

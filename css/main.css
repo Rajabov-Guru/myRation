@@ -121,28 +121,92 @@ header .header__wrapper .header__nuv a{
 /* END-BANNER */
 
 /* ADVANTAGES */
-
-.advantages {
+.advantages{
     margin-top: 160px;
-    width: 1278px;
-    height: 375px;
-    margin-left: auto;
-    margin-right: auto;
 }
-
 .advantages__block {
     margin-top:60px;
-    justify-content: center;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+.advantages__block__card{
+    text-align: center;
+}
+.advantages__block__card img{
+    width: 194px;
+    height: 184px;
+}
+.advantages__block__card h4{
+    margin-top: 24px;
+}
+/* ADVANTAGES END*/
 
-.advantages__block__card {
-    padding: 0px 30px;
+/* Choose_your_target */
+.Choose_your_target{
+    margin-top: 160px;
+    text-align: center;
 }
+.Choose_your_target .block{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-h6 {
-    padding-top: 24px;
 }
+.Choose_your_target .block .box{
+    text-align: left;
+    padding: 24px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #A8DA90;
+}
+.Choose_your_target .block .box .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.Choose_your_target .block .box{
+    position: relative;
+}
+.Choose_your_target .block .box .right1{
+    margin-left: 25px;
+}
+.Choose_your_target .block .box .right1 img{
+    width: 166px;
+    height: 215px;
+}
+.Choose_your_target .block .box .left1 .h5{
+    font-size: 14px !important;
+    font-weight: 400;
+    margin-top: 13px;
+    width: 169px;
+    
+}
+.Choose_your_target .block .box .left1 button{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    position:absolute;
+    bottom: 24px;
+    left: 24px;
+    padding: 15px 32px;
+    background-color: #F9FFF2;
+    border-radius: 50px;
+
+}
+.Choose_your_target button{
+    margin-top: 32px;
+    padding: 20px 220px;
+    background-color: #FFEBB6;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+}
+/* Choose_your_target END*/
+
 
 /* stages of work */
 .stages__wrapper {

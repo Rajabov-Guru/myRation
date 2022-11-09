@@ -207,6 +207,239 @@ header .header__wrapper .header__nuv a{
 }
 /* Choose_your_target END*/
 
+/* Program */
+.program {
+    width: 1272px;
+    height: 662px;
+    margin: auto;
+    margin-top:160px;
+}
+
+.buttons_type {
+    width: auto;
+    height: 60px;
+    display: flex;
+}
+
+.type_btn1 {
+    box-sizing: border-box;
+    width: 193px;
+    height: 60px;
+    background: #A8DA90;
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 10px 0px 0px 0px;
+}
+
+.type_btn2 {
+    box-sizing: border-box;
+    width: 193px;
+    height: 60px;
+    left: 276px;
+    top: 2377px;
+    background: #EFFFEF;
+    border: 1px solid #C8C8C8;
+}
+
+.type_btn3 {
+    box-sizing: border-box;
+    width: 193px;
+    height: 60px;
+    left: 468px;
+    top: 2377px;
+    background: #EFFFEF;
+    border: 1px solid #C8C8C8;
+    border-radius: 0px 10px 0px 0px;
+}
+
+.description {
+    box-sizing: border-box;
+    width: 864px;
+    background: #EFFFEF;
+    border: 1px solid #000000;
+    border-radius: 0px 0px 0px 10px;
+    padding: 32px 24px;
+}
+ 
+.container_form {
+    display: flex;
+}
+
+.description_text {
+    display: flex;
+}
+
+.description_text h5 {
+    padding-left: 32px;
+}
+
+.description_blocks {
+    display: flex;
+    padding-top: 32px;
+}
+
+.description_blocks_left {
+    width: auto;
+    height: auto;
+}
+
+.description_blocks_right {
+    width: auto;
+    height: auto;
+    padding-left: 24px;
+}
+
+.description_blocks_left img {
+    padding-top: 32px;
+    width: 385px;
+    height: 266px;
+}
+
+.description_blocks h4 {
+    padding-top: 55px;
+}
+.description_blocks h5 {
+    padding-top: 12px;
+}
+
+.slider_button {
+    display:flex;
+}
+
+.slider_button h6 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    padding-left: 219px;
+    width:133px;
+}
+
+.arrowRight {
+    padding-left: 16px;
+}
+
+.menu_imgs {
+    padding-top:32px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu_imgs img {
+    width: 120px;
+    height: 84px;
+    border-radius: 10px;
+}
+
+.menu_imgs_top {
+    margin-left: 23px;
+}
+
+.menu_imgs_bottom {
+    margin-top: 23px;
+}
+
+.nutrition {
+    margin-top: 109px;
+    text-align: center;
+}
+
+.spreadsheet {
+    margin-top: 13px;
+    display: flex;
+}
+
+.spreadsheet h7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+.rectangle_1 {
+    width: 102px;
+    height: 40px;
+    border: 0.5px solid #000000;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.rectangle_2,
+.rectangle_3 {
+    width: 103px;
+    height: 40px;
+    border: 0.5px solid #000000;
+    border-left: none;
+}
+
+.rectangle_4 {
+    width: 102px;
+    height: 40px;
+    border: 0.5px solid #000000;
+    border-radius: 0px 10px 10px 0px;
+    border-left: none;
+}
+
+.form {
+    box-sizing: border-box;
+    width: 409px;
+    background: #A8DA90;
+    border: 1px solid #000000;
+    border-left: 0px;
+    border-radius: 0px 10px 10px 0px;
+    padding: 32px 24px;
+}
+
+.form_description h6{
+    padding-top: 8px;
+}
+
+.form_days {
+    margin-top: 139px;
+}
+
+.form_days_buttons {
+    display:flex;
+    margin-top: 24px;
+}
+
+.form_days_buttons button {
+    width: 52px;
+    height: 52px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+.rectangle_btn {
+    margin-left: 25px;
+}
+
+.form_price {
+    margin-top: 100px;
+    display:flex;
+}
+
+.form_price h3 {
+    margin-left: 243px;
+}
+
+.form_button {
+    margin-top: 25px;
+}
+
+.form_button button {
+    align-items: center;
+    padding: 25px 32px;
+    gap: 10px;
+    width: 361px;
+    height: 74px;
+    background: #FFEBB6;
+    border-radius: 50px;
+}
+
+/* Program end */
 
 /* stages of work */
 .stages__wrapper {

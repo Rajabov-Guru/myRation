@@ -31,7 +31,7 @@
         <div class="container">
             <div class="banner__wrapper">
                 <img class="banner__logo" src="img/logo.svg">
-                <h1 class="banner__title">Система здорового питания<br>с доставкой на дом</h1>
+                <h1 class="banner__title media_query">Система здорового питания<br>с доставкой на дом</h1>
                 <button class="banner__btn">Выбрать рацион</button>
             </div>
         </div>
@@ -42,26 +42,26 @@
         <div class="container">
             <h2>Наши преимущества</h2>
             <div class="advantages__block">
-                <div class="advantages__block__card">
+                <div class="advantages__block__card box1">
                     <img src= "img/adv1.svg">
                     <h4>
                         Составим индивидуальный рацион за вас
                     </h4>
                     <!-- <h6>Составим идндивидуальный рацион за вас</h6> -->
                 </div>
-                <div class="advantages__block__card">
+                <div class="advantages__block__card box2">
                     <img src= "img/adv2.svg">
                     <h4>
                         Рассчитаем КБЖУ и размер порций
                     </h4>
                 </div>
-                <div class="advantages__block__card">
+                <div class="advantages__block__card box3">
                     <img src= "img/adv3.svg">
                     <h4>
                         Большой каталог блюд с подсчитанным КБЖУ
                     </h4>
                 </div>
-                <div class="advantages__block__card">
+                <div class="advantages__block__card box4">
                     <img src= "img/adv4.svg">
                     <h4>
                         Отслеживаем прогресс и корректируем ваш рацион
@@ -111,7 +111,6 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
             <button>
                 Создать свою программу питания
@@ -140,7 +139,8 @@
                         <div class="description_blocks_left">
                             <h5 style="padding-top: 0px;">Первый день <u>примерное меню</u></h5>
                             <div class="description_slider"></div>
-                            <img src="img/image_slider.svg" alt="">
+                            <img src="img/media_query/img_food.svg" class="img1" alt="">
+                            <img src="img/image_slider.svg" class="img2" alt="">
                             <h4>1 прием</h4>
                             <h5>Рисовый пудинг с ягодно-творожным кремом</h5>
                         </div>
@@ -191,28 +191,32 @@
                 </div>
 
                 <div class="form">
-                    <div class="form_description">
-                        <h4>4 блюда в день за 15$</h4>
-                        <h6>Доставки в удобное для вас время 4 дня в неделю</h6>
-                    </div>
-                    <div class="form_days">
-                        <h4>Количество дней</h4>
-                        <div class="form_days_buttons">
-                            <button><h5>1</h5></button>
-                            <button class="rectangle_btn"><h5>2</h5></button>
-                            <button class="rectangle_btn"><h5>4</h5></button>
-                            <button class="rectangle_btn"><h5>7</h5></button>
-                            <button class="rectangle_btn"><h5>14</h5></button>
+                    <div class="media_query_content">
+                        <div class="form_description">
+                            <h4>4 блюда в день за 15$</h4>
+                            <h6>Доставки в удобное для вас время 4 дня в неделю</h6>
                         </div>
-                    </div>
-                    <div class="form_price">
-                        <h5>Итого:</h5>
-                        <h3>30$</h3>
-                    </div>
-                    <div class="form_button">
-                        <button>
-                            <h4>Оформить заказ</h4>
-                        </button>
+                        <div class="media_query_right">
+                            <div class="form_days">
+                                <h4>Количество дней</h4>
+                                <div class="form_days_buttons">
+                                    <button><h5>1</h5></button>
+                                    <button class="rectangle_btn"><h5>2</h5></button>
+                                    <button class="rectangle_btn"><h5>4</h5></button>
+                                    <button class="rectangle_btn"><h5>7</h5></button>
+                                    <button class="rectangle_btn"><h5>14</h5></button>
+                                </div>
+                            </div>
+                            <div class="form_price">
+                                <h5>Итого:</h5>
+                                <h3>30$</h3>
+                            </div>
+                            <div class="form_button">
+                                <button>
+                                    <h4>Оформить заказ</h4>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -220,13 +224,11 @@
      </section>
 <!-- ↑↑↑ PASHA ↑↑↑ -->
     
-
-
     <!-- ↓↓↓ NUR ↓↓↓ -->
     <section class="stages">
         <div class="container">
             <div class="stages__wrapper">
-                <div class="stage">
+                <div class="stage stage1">
                     <div class="imeg-icon">
                         <img src="img/icon_basket.svg" alt="">
                     </div>
@@ -234,7 +236,7 @@
                         <h4>Оформляете заказ</h4>
                     </div>
                 </div>
-                <div class="stage">
+                <div class="stage stage2">
                     <div class="imeg-icon">
                         <img src="img/icon_call.svg" alt="">
                     </div>
@@ -242,7 +244,7 @@
                         <h4>Созваниваемся и подтверждаем</h4>
                     </div>
                 </div>
-                <div class="stage">
+                <div class="stage stage3">
                     <div class="imeg-icon">
                         <img src="img/icon_shop_car.svg" alt="">
                     </div>
@@ -250,7 +252,7 @@
                         <h4>Доставляем еду к вам домой </h4>
                     </div>
                 </div>
-                <div class="stage">
+                <div class="stage stage4">
                     <div class="imeg-icon">
                         <img src="img/icon_smiley.svg" alt="">
                     </div>
@@ -258,6 +260,11 @@
                         <h4>Достигаете своей цели</h4>
                     </div>
                 </div>
+                <img src="img/media_query/vector_1.svg" class="media_query_vector1" alt="">
+                <img src="img/media_query/vector_2.svg" class="media_query_vector2" alt="">
+                <img src="img/media_query/vector_3.svg" class="media_query_vector3" alt="">
+                <img src="img/media_query/vector_4.svg" class="media_query_vector4" alt="">
+
                 <img src="img/line_1.svg" class="line1" alt="">
                 <img src="img/line_2.svg" class="line2" alt="">
                 <img src="img/line_3.svg" class="line3" alt="">

@@ -46,8 +46,8 @@ h5{
     font-weight: 400!important;
 }
 .container {
-    width: 90%;
-    margin: auto;
+    width: 1272px;
+    margin: 0px auto;
 }
 * {
     padding: 0;
@@ -65,7 +65,8 @@ header{
     background-color: #FFE8A8;
     width: 100%;
 }
-header .header__wrapper{
+header .container .header__wrapper{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,7 +80,6 @@ header .header__wrapper .header__nuv{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 header .header__wrapper .header__nuv a{
     margin-right: 28px;
@@ -289,8 +289,10 @@ header .header__wrapper .header__nuv a{
     height: auto;
     padding-left: 24px;
 }
-
-.description_blocks_left img {
+.description_blocks_left .img1 {
+    display: none;
+}
+.description_blocks_left .img2 {
     padding-top: 32px;
     width: 385px;
     height: 266px;
@@ -438,7 +440,6 @@ header .header__wrapper .header__nuv a{
     background: #FFEBB6;
     border-radius: 50px;
 }
-
 /* Program end */
 
 /* stages of work */
@@ -458,6 +459,9 @@ header .header__wrapper .header__nuv a{
 }
 .stages_text{
     margin-left: 10px;
+}
+.media_query_vector1, .media_query_vector2, .media_query_vector3, .media_query_vector4{
+    display: none;
 }
 .line1{
     position: absolute;
@@ -814,3 +818,201 @@ footer{
     text-decoration: none;
 }
 /*footer END*/
+
+/*↓↓↓ media query ↓↓↓*/
+@media(min-width:1000px) and (max-width: 1440px){
+    .container {
+        width: 960px;
+        margin: 0 auto;
+    }
+    /*HEADER*/
+    /*-----------------------------------------*/
+    /*HEADER END*/
+
+    /* BANNER */
+    .banner{
+        background-image: url('../img/media_query/main.svg');
+        background-position: top;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding-top: 250px;
+        height: 800px;
+    }
+    .media_query{
+        padding-top: 172px;
+        font-size: 48px;
+        font-weight: 600;
+        background-image: url('../img/media_query/logo.svg');
+        background-position: 50% -5px;
+        background-repeat: no-repeat;
+       
+    }
+    .banner .banner__wrapper .banner__logo{
+        display: none;
+    }
+    /* END-BANNER */
+    /* ADVANTAGES */
+    .advantages__block {
+        margin-top:60px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .advantages__block__card{
+        text-align: center;
+        width: 330px;
+    }
+    .advantages__block .box3, .box4{
+        margin-top: 60px;
+    } 
+    /* ADVANTAGES END*/
+    .Choose_your_target .block{
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow-x: auto;
+    }
+    .Choose_your_target .block .box{
+        margin-right: 24px;
+    }
+    /* Choose_your_target END*/
+
+    /* Program */
+    .program {
+        width: 960px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 160px;
+    }
+    .description {
+        width: 100%;
+        border-radius: 0px 10px 0px 0;
+    }
+    .container_form {
+        flex-wrap: wrap;
+    }
+    .description_blocks_left .img2 {
+        display: none;
+    }
+    .description_blocks_left .img1 {
+        display: initial;
+        padding-top: 32px;
+    }
+    .form {/*right*/
+        width: 100%;
+        border: 1px solid #000000;
+        border-radius: 0px 0px 10px 10px;
+    }
+    .form .media_query_content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .form_description h6{
+        padding-top: 8px;
+        font-size: 16px;
+        font-weight: 400;
+        width: 278px;
+    }
+    .form_days {
+        margin-top: 5px;
+    }
+    .form_price {
+        margin-top: 58px;
+    }
+    /* Program end */
+
+    /* stages of work*/
+    .stages__wrapper {
+        margin-top: 160px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 850px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .stage3, .stage4{
+        margin-top: 70px;
+    }
+    .line1, .line2, .line3{
+        display: none;
+    }
+    .media_query_vector1{
+        display: initial;
+        width: 431px;
+        position: absolute;
+        top: -79px;
+        left: 200px;
+    }
+    .media_query_vector2{
+        display: initial;
+        height: 76px;
+        position: absolute;
+        top: 37px;
+        left: 665px;
+    }
+    .media_query_vector3{
+        display: initial;
+        width: 431px;
+        position: absolute;
+        top: 165px;
+        left: 200px;
+    }
+    .media_query_vector4{
+        display: initial;
+        height: 76px;
+        position: absolute;
+        top: 37px;
+        left: 144px;
+    }
+    /* stages of work END */
+
+    /*calorie_passcount*/
+    .input_form h2{
+        width: 606px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .right .Target .buttons{
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /*calorie_passcount END*/
+
+    /*Payment_and_delivery*/
+    .Payment_and_delivery .info_box{
+        margin-top: 52px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .Payment_and_delivery .info_box .box{
+        display: block;
+        justify-content: space-between;
+    }
+    .Payment_and_delivery .info_box .box{
+        width: auto;
+    }
+    .Payment_and_delivery .info_box .box img{
+        margin-bottom: 32px;
+    }
+    /*Payment_and_delivery END*/
+
+    /*comments*/
+    .comment{
+        width: 835px;
+    } 
+    .comment .content .text_comment{
+        width: 508px;
+    }
+    .comment .content .text_comment p{
+        width: 508px;
+    }
+    /*comments END*/
+}
+

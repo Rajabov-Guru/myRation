@@ -16,35 +16,43 @@ body {
     width: 100%; 
     margin: auto;
 }
+
 h1{
     font-size: 64px;
     font-weight: 600;
 }
+
 h2{
     font-size: 48px;
-    font-weight: 700;
+    font-weight: 600;
     text-align: center;
 }
+
 h3{
     font-size: 24px;
     font-weight: 600;
 }
+
 h4{
     font-size: 20px;
     font-weight: 600;
 }
-.h4{
-    font-size: 16px !important;
-    font-weight: 500!important;
-}
+
 h5{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+h6{
     font-size: 16px;
     font-weight: 400;
 }
-.h5{
-    font-size: 20px !important;
-    font-weight: 400!important;
+
+h7{
+    font-size: 14px;
+    font-weight: 400;
 }
+
 .container {
     width: 1272px;
     margin: 0px auto;
@@ -109,8 +117,6 @@ header .header__wrapper .header__nuv a{
     background-color: #FFEBB6;
     border-radius: 50px;
     margin-top: 80px;
-    font-size: 20px;
-    font-weight: 700;
 }
 .banner .banner__wrapper .banner__btn:hover{
     background-color: #FFF3D0;
@@ -205,6 +211,15 @@ header .header__wrapper .header__nuv a{
     font-weight: bold;
     border-radius: 50px;
 }
+
+.Choose_your_target_btn_text{
+    display: flex;
+}
+
+.Choose_your_target_btn_text img {
+    padding-left: 14px;
+}
+
 /* Choose_your_target END*/
 
 /* Program */
@@ -270,7 +285,7 @@ header .header__wrapper .header__nuv a{
     display: flex;
 }
 
-.description_text h5 {
+.description_text h6 {
     padding-left: 32px;
 }
 
@@ -283,6 +298,10 @@ header .header__wrapper .header__nuv a{
     width: auto;
     height: auto;
 }
+
+/* .description_blocks_left h7 {
+    padding-top: 8px;
+} */
 
 .description_blocks_right {
     width: auto;
@@ -309,12 +328,7 @@ header .header__wrapper .header__nuv a{
     display:flex;
 }
 
-.slider_button h6 {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+.slider_button h7 {
     padding-left: 219px;
     width:133px;
 }
@@ -382,6 +396,10 @@ header .header__wrapper .header__nuv a{
     border: 0.5px solid #000000;
     border-radius: 0px 10px 10px 0px;
     border-left: none;
+}
+
+.spreadsheet div {
+    padding-top: 3px;
 }
 
 .form {
@@ -801,7 +819,7 @@ footer{
     width: 191px;
     height: 49px;
 }
-.logo_novigation .novigation a{
+.logo_novigation .novigation h6{
     margin-right: 67px;
     text-decoration: none;
     color: #000000;
@@ -812,7 +830,7 @@ footer{
     align-items: center;
     margin-top: 20px;
 }
-.copyright a{
+.copyright h7{
     margin-left: 5px;
     color: #000000;
     text-decoration: none;
@@ -853,7 +871,6 @@ footer{
     /* END-BANNER */
     /* ADVANTAGES */
     .advantages__block {
-        margin-top:60px;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
@@ -867,7 +884,6 @@ footer{
     } 
     /* ADVANTAGES END*/
     .Choose_your_target .block{
-        margin-top: 60px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -882,8 +898,7 @@ footer{
     .program {
         width: 960px;
         height: auto;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
         margin-top: 160px;
     }
     .description {
@@ -926,9 +941,7 @@ footer{
 
     /* stages of work*/
     .stages__wrapper {
-        margin-top: 160px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
         width: 850px;
         position: relative;
         display: flex;

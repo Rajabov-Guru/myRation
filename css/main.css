@@ -47,17 +47,15 @@ h6{
     font-size: 16px;
     font-weight: 400;
 }
-
 h7{
     font-size: 14px;
     font-weight: 400;
 }
-
 .container {
     width: 1272px;
     margin: 0px auto;
 }
-* {
+*{
     padding: 0;
     margin: 0;
 }
@@ -97,9 +95,9 @@ header .header__wrapper .header__nuv a{
 /* BANNER */
 .banner{
     text-align: center;
-    background-image: url('../img/Rectangle.svg');
-    background-position: center;
+    background-image: url('../img/main.svg');
     background-repeat: no-repeat;
+    background-position: top;
     background-size: 100%;
     height: 1036px;
     width: 100%;
@@ -161,6 +159,8 @@ header .header__wrapper .header__nuv a{
 
 }
 .Choose_your_target .block .box{
+    margin-right: 24px;
+    width: 405px;
     text-align: left;
     padding: 24px;
     border: 1px solid black;
@@ -171,6 +171,9 @@ header .header__wrapper .header__nuv a{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+}
+.Choose_your_target .block .box .content .left1{
+    width: 170px;
 }
 .Choose_your_target .block .box{
     position: relative;
@@ -462,7 +465,7 @@ header .header__wrapper .header__nuv a{
 
 /* stages of work */
 .stages__wrapper {
-    margin-top: 160px;
+    margin-top: 220px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -512,7 +515,7 @@ form{
     margin-top: 44px;
 }
 .input_form{
-    margin-top: 160px;
+    margin-top: 220px;
     border:1px solid black;
     border-radius: 10px;
     background-color: #EFFFEF;
@@ -645,7 +648,6 @@ form{
     margin-top: 25px;
     font-size: 20px;
     height: 40px;
-    width: 100%;
     background-color: transparent;
     border: 1px solid #C0C0C0;
     border-radius: 50px;
@@ -691,10 +693,9 @@ form{
 }
 /*calorie_passcount END*/
 
-/*calorie_passcount*/
+/*Payment_and_delivery*/
 .Payment_and_delivery{
     margin-top: 160px;
-    
 }
 .Payment_and_delivery .info_box{
     margin-top: 52px;
@@ -717,7 +718,7 @@ form{
     font-weight: 900;
     
 }
-.Payment_and_delivery .info_box .box .text p{
+.Payment_and_delivery .info_box .box .text h5{
     margin-top: 8px;
     font-weight: 400;
     width: 250px;
@@ -819,7 +820,12 @@ footer{
     width: 191px;
     height: 49px;
 }
-.logo_novigation .novigation h6{
+.logo_novigation .novigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo_novigation .novigation a{
     margin-right: 67px;
     text-decoration: none;
     color: #000000;
@@ -830,14 +836,19 @@ footer{
     align-items: center;
     margin-top: 20px;
 }
-.copyright h7{
+.copyright a{
+
     margin-left: 5px;
     color: #000000;
     text-decoration: none;
 }
+.copyright .last{
+    margin-left: 0;
+}
 /*footer END*/
 
 /*↓↓↓ media query ↓↓↓*/
+/*-----------------------------------------------------------------------------------------------------------------------1000px - 1440px*/
 @media(min-width:1000px) and (max-width: 1440px){
     .container {
         width: 960px;
@@ -941,15 +952,40 @@ footer{
 
     /* stages of work*/
     .stages__wrapper {
-        margin: 0 auto;
+        margin-top: 220px;
+        margin-right: auto;
+        margin-left: auto;
         width: 850px;
         position: relative;
         display: flex;
         flex-wrap: wrap;
     }
-    .stage3, .stage4{
-        margin-top: 70px;
+
+    .stages__wrapper .stage1{
+        position: absolute;
+        top: -10px;
+        left: 0px;
     }
+    .stages__wrapper .stage2{
+        position: absolute;
+        top: -10px;
+        left: 531px;
+    }
+    .stages__wrapper .stage4{
+        position: absolute;
+        top: 114px;
+        left: 0px;
+        
+    }
+    .stages__wrapper .stage3{
+        position: absolute;
+        top: 118px;
+        left: 559px;
+    }
+    
+    /*.stage3, .stage4{
+        margin-top: 70px;
+    }*/
     .line1, .line2, .line3{
         display: none;
     }
@@ -984,6 +1020,9 @@ footer{
     /* stages of work END */
 
     /*calorie_passcount*/
+    .input_form{
+        margin-top: 380px;
+    }
     .input_form h2{
         width: 606px;
         margin-left: auto;
@@ -1011,6 +1050,15 @@ footer{
     .Payment_and_delivery .info_box .box{
         width: auto;
     }
+    .Payment_and_delivery .info_box .box .text .widthes1{
+        width: 226px;
+    }
+    .Payment_and_delivery .info_box .box .text .widthes2{
+        width: 262px;
+    }
+    .Payment_and_delivery .info_box .box .text .widthes3{
+        width: 256px;
+    }
     .Payment_and_delivery .info_box .box img{
         margin-bottom: 32px;
     }
@@ -1027,5 +1075,293 @@ footer{
         width: 508px;
     }
     /*comments END*/
-}
 
+    /*footer*/
+    .logo_novigation{
+        justify-content: space-between;
+    }
+    .logo_novigation .logo{
+        margin-right: 54px;
+    }
+    .logo_novigation .novigation a{
+        margin-right: 67px;
+    }
+    .logo_novigation .novigation .last{
+        margin-right: 0px;
+    }
+    /*footer END*/
+}
+/*-----------------------------------------------------------------------------------------------------------------------0px - 576px*/
+@media(min-width:0px) and (max-width: 576px){
+    .container {
+        width: 390px;
+        margin: 0 auto;
+    }
+    /*HEADER*/
+    /*-----------------------------------------*/
+    /*HEADER END*/
+
+    /* BANNER */
+    .banner{
+        background-image: url('../img/media_query/main_mobail.svg');
+        background-position: top;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding-top: 300px;
+        height: 935px;
+    }
+    .media_query{
+        padding-top: 150px;
+        font-size: 48px;
+        font-weight: 600;
+        background-image: url('../img/media_query/logo_mobail2.svg');
+        background-position: 50% -5px;
+        background-repeat: no-repeat;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .banner .banner__wrapper .banner__logo{
+        display: none;
+    }
+    .banner .banner__wrapper .banner__btn{
+        margin-top: 50px;
+    }
+    /* END-BANNER */
+
+    /* ADVANTAGES */
+    .advantages{
+        margin-top: 130px;
+    }
+    .advantages__block {
+        margin-top:32px;
+    }
+    .advantages h2{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .advantages__block {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .advantages__block__card{
+        text-align: center;
+        width: 307px;
+        margin-top: 64px;
+    }
+    .advantages__block .box1{
+        margin-top: 0px;
+    }
+    .advantages__block__card h6{
+        width: 291px;
+    }
+    /* ADVANTAGES END*/
+
+    /* Choose_your_target*/
+    .Choose_your_target{
+        margin-top: 130px;
+    }
+    .Choose_your_target h2{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .Choose_your_target .block{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 8px;
+    }
+    .Choose_your_target .block .box{
+        margin-top: 24px;
+    }
+    .Choose_your_target button /*.Choose_your_target_btn_text*/ {
+        padding: 22px 40px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .Choose_your_target button .Choose_your_target_btn_text h4{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    /* Choose_your_target END*/
+
+    /* Program */
+    .program {
+        width: 440px;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 160px;
+    }
+    .description {
+        width: 100%;
+        border-radius: 0px 10px 0px 0;
+    }
+    .container_form {
+        flex-wrap: wrap;
+    }
+    .description_blocks_left .img2 {
+        display: none;
+    }
+    .description_blocks_left .img1 {
+        display: initial;
+        padding-top: 32px;
+    }
+    .form {/*right*/
+        width: 100%;
+        border: 1px solid #000000;
+        border-radius: 0px 0px 10px 10px;
+    }
+    .form .media_query_content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .form_description h6{
+        padding-top: 8px;
+        font-size: 16px;
+        font-weight: 400;
+        width: 278px;
+    }
+    .form_days {
+        margin-top: 5px;
+    }
+    .form_price {
+        margin-top: 58px;
+    }
+    /* Program end */
+
+    /* stages of work*/
+    .stages__wrapper {
+        margin-top: 130px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 339px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .stages__wrapper .stage{
+        margin-top: 30px;
+    }
+    .stages__wrapper .stage1{
+        margin-top: 0px;
+    }
+    .stages__wrapper .delete{
+        display: none;
+    }
+    /* stages of work END */
+
+    /*calorie_passcount*/
+    .calorie_passcount{
+        width: 90%;
+    }
+    .calorie_passcount .input_form h2{
+        font-size: 24px;
+        font-weight: 600;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    form{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 56px;
+    }
+    .input_form{
+        margin-top: 130px;
+        border:1px solid black;
+        border-radius: 10px;
+        background-color: #EFFFEF;
+        padding: 56px 20px;
+        text-align: center;
+    }
+    .left{
+        text-align: start;
+        width: 100%;
+        margin-right: 0px;
+    }
+    .right{
+        margin-top: 8px;
+        text-align: start;
+        width: 100%;
+    }
+    
+    .right .Target .buttons{
+        margin-top: 16px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .right .Target .buttons .btn{
+        margin-top: 16px;
+    }
+    
+    /*calorie_passcount END*/
+
+    /*Payment_and_delivery*/
+    .Payment_and_delivery{
+        width: 396px;
+        margin-top: 130px;
+    }
+    .Payment_and_delivery h2{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .Payment_and_delivery .info_box{
+        margin-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Payment_and_delivery .info_box .box{
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Payment_and_delivery .info_box .box .text .widthes1{
+        width: 226px;
+    }
+    .Payment_and_delivery .info_box .box .text .widthes2{
+        width: 226px;
+    }
+    .Payment_and_delivery .info_box .box .text .widthes3{
+        width: 226px;
+    }
+    /*Payment_and_delivery END*/
+
+    /*comments*/
+    .comment{
+        width: 835px;
+    } 
+    .comment .content .text_comment{
+        width: 508px;
+    }
+    .comment .content .text_comment p{
+        width: 508px;
+    }
+    /*comments END*/
+
+    /*footer*/
+    footer{
+        margin-top: 130px;
+        padding-top: 33px;
+        padding-bottom: 36px;
+    }
+    .logo_novigation{
+        display: block;
+    }
+    .logo_novigation .logo{
+        margin-bottom: 40px;
+        margin-right: 0px;
+    }
+    .logo_novigation .novigation{
+        display: block;
+    }
+    .logo_novigation .novigation a{
+        margin-bottom: 30px;
+    }
+    .copyright{
+        justify-content: flex-start;
+        margin-bottom: 0px;
+    }
+    /*footer END*/
+
+}

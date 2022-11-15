@@ -141,7 +141,8 @@ header .header__wrapper .header__nuv a{
     width: 194px;
     height: 184px;
 }
-.advantages__block__card h4{
+.advantages__block__card h6{
+    width: 291px;
     margin-top: 24px;
 }
 /* ADVANTAGES END*/
@@ -310,6 +311,17 @@ header .header__wrapper .header__nuv a{
     width: auto;
     height: auto;
     padding-left: 24px;
+}
+.media_queri_Kkaloria12, .media_queri_Kkaloria34{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vector_left{
+    display: none;
+}
+.vector_right{
+    display: none;
 }
 .description_blocks_left .img1 {
     display: none;
@@ -1186,46 +1198,150 @@ footer{
 
     /* Program */
     .program {
-        width: 440px;
+        width: 390px;
         height: auto;
-        margin: 0 auto;
-        margin-top: 160px;
-    }
-    .description {
-        width: 100%;
-        border-radius: 0px 10px 0px 0;
+        margin-top:130px;
     }
     .container_form {
+        width: 390px;
+        display: flex;
         flex-wrap: wrap;
     }
-    .description_blocks_left .img2 {
+    .description{
+        border-radius: 0px;
+    }
+    .description_text h3{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .description_text h6 {
         display: none;
     }
-    .description_blocks_left .img1 {
-        display: initial;
+    .description_blocks {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 36px;
+    }
+    .description_blocks_left {
+        width: auto;
+        height: auto;
+    }
+    .description_blocks_left h6{
+        text-align: center;
+        width: 152px;
+    }
+    .description_blocks h4{
         padding-top: 32px;
+        margin-bottom: 8px;
     }
-    .form {/*right*/
-        width: 100%;
-        border: 1px solid #000000;
-        border-radius: 0px 0px 10px 10px;
-    }
-    .form .media_query_content{
+    .media_query_vector{
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+    .vector_left{
+        display: initial;
+    }
+    .vector_right{
+        display: initial;
+    }
+    .description_blocks_right {
+        padding-left: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .description_blocks_left .img1 {
+        display: none;
+    }
+    .description_blocks_left .img2 {
+        padding-top: 32px;
+        width: 340px;
+        height: 266px;
+    }
+    .slider_button{
+        display: none;
+    }
+    
+    .menu_imgs {
+        display: none;
+    }
+    .nutrition {
+        margin-top: 24px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nutrition h6{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .spreadsheet {
+        display: block;
+    }
+    .spreadsheet .media_queri_Kkaloria12{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .spreadsheet .media_queri_Kkaloria12 .rectangle_1{
+        width: 98px;
+        border: 0.5px solid #000000;
+        border-radius: 10px 0px 0px 0px;
+    }
+    .spreadsheet .media_queri_Kkaloria12 .rectangle_2{
+        width: 98px;
+        border: 0.5px solid #000000;
+        border-radius: 0px 10px 0px 0px;
+    }
+    .spreadsheet .media_queri_Kkaloria34 .rectangle_3{
+        width: 98px;
+        border: 0.5px solid #000000;
+        border-radius:  0px 0px  0px 10px;
+    }
+    .spreadsheet .media_queri_Kkaloria34 .rectangle_4{
+        width: 98px;
+        border: 0.5px solid #000000;
+        border-radius: 0px  0px 10px 0px ;
+    }
+    .spreadsheet .media_queri_Kkaloria34{
+        margin-top: 0px;
+        padding-top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }  
+    
+    .form {
+        width: 390px;
+        border: 1px solid #000000;
+        border-radius: 0px 0px 10px 10px;
+    }
+    
     .form_description h6{
-        padding-top: 8px;
-        font-size: 16px;
-        font-weight: 400;
-        width: 278px;
+        width: 300px;
     }
+    
     .form_days {
-        margin-top: 5px;
-    }
+        margin-top: 43px;
+    }    
+    
     .form_price {
-        margin-top: 58px;
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .form_price h3 {
+        margin-left: 0px;
+    }
+    .form_button {
+        margin-top: 24px;
+    }
+    
+    .form_button button {
+        align-items: center;
+        padding: 25px 32px;
+        width: 100%;
     }
     /* Program end */
 
@@ -1251,7 +1367,7 @@ footer{
 
     /*calorie_passcount*/
     .calorie_passcount{
-        width: 90%;
+        width: auto;
     }
     .calorie_passcount .input_form h2{
         font-size: 24px;
@@ -1283,8 +1399,8 @@ footer{
         text-align: start;
         width: 100%;
     }
-    
     .right .Target .buttons{
+        width: 156px;
         margin-top: 16px;
         display: flex;
         flex-wrap: wrap;
@@ -1292,7 +1408,9 @@ footer{
     .right .Target .buttons .btn{
         margin-top: 16px;
     }
-    
+    .right .Target .buttons #btn1{
+        margin-top: 0px;
+    }
     /*calorie_passcount END*/
 
     /*Payment_and_delivery*/
@@ -1328,14 +1446,78 @@ footer{
     /*Payment_and_delivery END*/
 
     /*comments*/
-    .comment{
-        width: 835px;
-    } 
-    .comment .content .text_comment{
-        width: 508px;
+    .comments{
+        margin-top: 130px;
+        width: 390px;
+        margin-left: auto;
+        margin-right: auto;
     }
-    .comment .content .text_comment p{
-        width: 508px;
+    .comment{
+        padding: 40px 24px;
+        width: 90%;
+        
+        
+    }
+    
+    .comments h2{
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .comment .content{
+        display: block;
+    }
+    .comment .content .text_comment{
+        width: 393px;
+    }
+    .comment .content .text_comment h5{
+        width: 334px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .comment .content .imeg{
+        background-image: url('../img/media_query/coment_foto_mobail2.svg');
+        background-position: 50% -5px;
+        background-repeat: no-repeat;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 301px;
+    }
+    .comment .content .imeg img{
+        opacity: 0;
+        width: 394px;
+        height: 301px;
+     }
+     .comment .content .text_comment .title{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+
+
+
+
+    .slider{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 36px;
+    }
+    .slider .last img{
+        width: 20px;
+    }
+    .slider .rounds{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .slider .rounds .round{
+        margin-right: 24px;
+    }
+    .slider .rounds img{
+        width: 12px;
+        height: 12px;
     }
     /*comments END*/
 
